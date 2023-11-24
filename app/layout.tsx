@@ -1,8 +1,16 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import appstyles from '../styles/app.module.css';
+import { Navigation } from '../components/Navigation';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const links = [
+  { href: '/', label: 'Home', icon: 'H' },
+  { href: '/dashboard', label: 'Dashboard', icon: 'D' },
+  { href: '/settings', label: 'Setting', icon: 'S' },
+];
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main style={{ border: '1px solid red' }}>{children}</main>
+        <main className={appstyles.gridContainer}>
+          <Navigation links={links} />
+          {children}
+        </main>
       </body>
     </html>
   );
