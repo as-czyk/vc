@@ -9,11 +9,8 @@
 
   gap: 0.5rem;
   cursor: pointer;
-  border: 1px solid red;
 
   padding: 1.5rem;
-
-  transition: max-width 0.3s ease-in-out;
 }
 
 .container {
@@ -25,6 +22,16 @@
   display: none;
 }
 
+.logo {
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+}
+
 .navigation:hover .label {
+  display: block;
+}
+
+.navigation:hover .logo {
   display: block;
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 export const Navigation = (props: any) => {
   return (
     <nav className={navigationStyles.navigation}>
+      <div className={navigationStyles.logo}></div>
       {props.links.map((link: any) => {
         return (
           <Link href={link.href} key={link.href}>
