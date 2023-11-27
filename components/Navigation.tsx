@@ -1,5 +1,5 @@
 import React from 'react';
-import navigationStyles from '../styles/navigation.module.css';
+import navigationStyles from '@/styles/navigation.module.scss';
 import Link from 'next/link';
 
 export const Navigation = (props: any) => {
