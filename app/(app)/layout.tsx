@@ -3,7 +3,6 @@ import { Header } from '@/components/Header';
 import appstyles from '@/styles/app.module.scss';
 
 const links = [
-  { href: '/', label: 'Home', icon: 'H' },
   { href: '/dashboard', label: 'Dashboard', icon: 'D' },
   { href: '/settings', label: 'Setting', icon: 'S' },
 ];
