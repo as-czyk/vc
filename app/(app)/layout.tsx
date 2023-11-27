@@ -4,7 +4,16 @@ import appstyles from '@/styles/app.module.scss';
 
 const links = [
   { href: '/dashboard', label: 'Dashboard', icon: 'D' },
-  { href: '/settings', label: 'Setting', icon: 'S' },
+  {
+    href: '/settings',
+    label: 'Setting',
+    icon: 'S',
+  },
+  {
+    href: '/venturecapital',
+    label: 'Venture',
+    icon: 'V',
+  },
 ];
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {

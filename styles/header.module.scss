@@ -1,4 +1,14 @@
+//@import '@/app/globals.css';
+
 .header {
   grid-area: 1 / 2 / 1 / 5;
-  border: 1px solid green;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 1rem;
+
+  padding: 1.5rem;
 }

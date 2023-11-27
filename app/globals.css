@@ -1,0 +1,7 @@
+body {
+  margin: unset;
+}
+
+:root {
+  --common-flex-gap: 1rem;
+}

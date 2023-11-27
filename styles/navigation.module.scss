@@ -4,7 +4,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   gap: 0.5rem;
@@ -18,6 +18,10 @@
 .container {
   display: flex;
   flex-direction: row;
+}
+
+.navContainer {
+  margin-top: 5rem;
 }
 
 .label {
