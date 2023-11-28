@@ -7,13 +7,15 @@ const getData = async () => {
 const VentureCapitalPage = async () => {
   const data = await getData();
   return (
-    <div>
+    <div style={{ gridArea: '2 / 2 / 3 / 5' }}>
       {data.map((item) => {
         return (
-          <div key={item.id}>
-            {item.name}
-            {item.description}
-            {item.url}
+          <div
+            style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}
+            key={item.id}
+          >
+            <span>{item.name}</span>
+            <span>{item.url}</span>
           </div>
         );
       })}

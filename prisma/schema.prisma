@@ -13,11 +13,13 @@ datasource db {
 model VentureCapitalist {
   id                 String       @id @default(uuid()) @map("_id")
   name               String
+  email              String
+  type               String 
   location           String
   description        String
   url                String
   stages             String[]
-  investments        String[]
+  investedCompanies  String[]
   businessFocus      String[]
   socials            Json
   numberOfInvestments Int
